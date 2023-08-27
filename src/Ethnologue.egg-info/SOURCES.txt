@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-setup.cfg
-src/Ethnologue/__init__.py
-src/Ethnologue/ethnologue.py
-src/Ethnologue.egg-info/PKG-INFO
-src/Ethnologue.egg-info/SOURCES.txt
-src/Ethnologue.egg-info/dependency_links.txt
-src/Ethnologue.egg-info/top_level.txt
