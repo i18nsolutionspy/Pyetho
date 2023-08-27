@@ -457,7 +457,34 @@ def language_code(country_name="India", lang="Tamil"):
         'ule'
         """
         return (data[country_name]['languages'][lang]['language_code(ISO639)'])
+    
+def language_code_to_name(code="tam"):
+    """
+    Get the name of the language with the specified language code (ISO639).
 
+    Parameters:
+    code : str, mandatory
+        The ISO639 language code will be given to retrieve the language name. Default choice is "tam".
+
+    Returns:
+    str: The name of the language with the specified language code (ISO639) will be returned in a string format.
+    
+    Examples:
+    --------        
+    >>> pyetho.language_code_to_name("tam")
+    'Tamil'
+
+    >>> pyetho.language_code_to_name("eng")
+    'English'
+    """
+    for i in data.keys():
+        for j in data[i]["languages"]:
+            a=[]
+            a.append(data[i]["languages"][j]["language_code(ISO639)"])
+            for k in  a:
+                if (code == k):
+                    return j
+                    
 def language_population(country_name="India", lang="Tamil"):
         """
         Get the population estimate of speakers for the specified language in the country.
