@@ -1,0 +1,152 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/i18nsolutionspy/Ethnologue/632e1a61f13aaf91e2e93766ef9d6bc91cceb1e4/logo.svg"><br>
+</div>
+
+## Pyetho: A library for Python to all the country languages in the world
+This is a Language and Country Information Package. In order to know the details of all the languages in the world, **i18n Solutions Salem**, have developed this package based on the interest of integrating the languages of the world to python developers.
+
+
+
+> Developers : Bhuvaneshwara Ragavendra.S <bhuvaneshwararagavendra@gmail.com> Roseline Santhiya.M <rosekevin30@gmail.com> Archana.K.T <archanakt.cse@gmail.com> Vinoth Kumar <vinobe000@gmail.com>
+
+
+> Contributors : Varsha A, JayaShree S, Kaviya V, Abinaya V, Janani S, Karthika P, Anandhi P, Hemalatha R, Sri Sakthi Priya T, Nisha Basreen M, Anu R, Megan V, Mogana Priya S
+
+
+
+Installation
+============
+```python
+pip install pyetho
+```
+
+
+Usage
+=====
+```python
+from etho import pyetho
+```
+
+About 
+=====
+Pyetho is a Python package that provides information about languages and countries. It offers a range of functionalities to retrieve data such as country names, summaries, official names, language details, populations, language families, and much more. This package follows ISO Standards for Country code and Language code.
+
+Features
+========
+-> Retrieve details about countries and their attributes such as continent, area, commencement year, and more.
+
+-> Access language-specific information, including summaries, language codes, populations, and families.
+
+-> Explore language families and their associated languages across various countries.
+
+```python
+1        
+country_list()
+Get a list of all country names in the dataset.
+
+2        
+country_summary(country_name="India")
+Get a summary of the specified country.
+
+3
+country_officialname(country_name="India")
+Get the official name of the specified country.
+
+4
+country_code(country_name="IN")
+Get the country code (ISO3166) of the specified country.
+
+5
+country_area(country_name="India")
+Get the area of the specified country.
+
+6
+country_commencement(country_name="India")
+Get the commencement year of the specified country.
+
+7
+country_continent(country_name="India")
+Get the continent of the specified country.
+
+8
+country_families(country_name)
+Get the language families present in the specified country.
+
+9
+country_vitality(country_name="India")
+Get the vitality of languages in the specified country.
+
+10
+continent_countries(continent="Asia")
+Get a list of countries in the specified continent.
+
+11
+total_countries()
+Print the total number of countries in the dataset.
+
+12
+continent_length(continent="Asia")
+Get the total number of countries in the specified continent.
+
+13
+country_languages(country_name="India")
+Get a list of languages spoken in the specified country.
+
+14
+language_summary( country_name="India", lang="Tamil")
+Get the summary of the specified language spoken in the country.
+
+15
+language_code(country_name="India", lang="Tamil")
+Get the language code (ISO639) of the specified language spoken in the country.
+
+16
+language_population(country_name="India", lang="Tamil")
+Get the population estimate of speakers for the specified language in the country.
+
+17
+language_family(country_name="India", lang="Tamil")
+Get the language family to which the specified language belongs in the country.
+
+18
+lang_to_country(lang="Tamil")
+Get the names of countries where a specific language is spoken and its language family.
+
+19
+languagecode_to_country(code)
+Get the names of countries where a specific language code (ISO 639) is associated.
+
+20
+country_family_languages(country_name,family_name)
+Retrieve the languages associated with a specific language family in a given country.
+
+21
+language_to_family(language_name)
+Retrieve the family name associated with a specific language.
+
+21
+all_families_list()
+Retrieve all the family names associated with all the countries.
+
+22
+total_families()
+Retrieve the number of unique family names associated with all the countries.
+
+23
+family_to_country(family_name)
+Retrieve the country names associated with a specific family_name.
+
+24
+all_family_languages(family)
+Retrieve all languages within a specific language family across all countries.
+```
+
+REFERENCES:
+==========
+https://www.ethnologue.com/
+
+https://www.worldometers.info/
+
+https://www.worlddata.info/
+
+https://www.wikipedia.org/
