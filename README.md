@@ -124,19 +124,19 @@ Retrieve the languages associated with a specific language family in a given cou
 language_to_family(language_name)
 Retrieve the family name associated with a specific language.
 
-21
+22
 all_families_list()
 Retrieve all the family names associated with all the countries.
 
-22
+23
 total_families()
 Retrieve the number of unique family names associated with all the countries.
 
-23
+24
 family_to_country(family_name)
 Retrieve the country names associated with a specific family_name.
 
-24
+25
 all_family_languages(family)
 Retrieve all languages within a specific language family across all countries.
 ```
