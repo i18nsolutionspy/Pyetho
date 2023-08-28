@@ -849,5 +849,28 @@ def all_family_languages(family):
                 if family in data[i]['families']:
                     result.append(data[i]['families'][family])
             return result
+def language_code_to_language(code="tam"):
+    """
+    Get the name of the language with the specified language code (ISO639).
+    Parameters:
+    code : str, mandatory
+        The ISO639 language code will be given to retrieve the language name. Default choice is "tam".
+    Returns:
+    str: The name of the language with the specified language code (ISO639) will be returned in a string format.
+    
+    Examples:
+    --------        
+    >>> pyetho.language_code_to_language("tam")
+    'Tamil'
+    >>> pyetho.language_code_to_language("eng")
+    'English'
+    """
+    for i in data.keys():
+        for j in data[i]["languages"]:
+            a=[]
+            a.append(data[i]["languages"][j]["language_code(ISO639)"])
+            for k in  a:
+                if (code == k):
+                    return j
 
     
