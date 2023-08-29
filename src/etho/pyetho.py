@@ -873,4 +873,24 @@ def language_code_to_language(code="tam"):
                 if (code == k):
                     return j
 
-    
+def continent_names():
+    """
+    Returns a list of all the continents in the world.
+        
+    Returns:
+    list: A continent names of all over the world in a list format.
+        
+    Examples
+    --------        
+    >>> pyetho.continent_names()
+    Africa
+    Asia
+    Australia
+    Europe
+    North America
+    South America
+    Antarctica
+    """
+    l = ['Africa','Asia','Australia','Europe','North America','South America','Antarctica']
+    for i in l:
+        print(i)
